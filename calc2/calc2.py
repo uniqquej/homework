@@ -32,6 +32,13 @@ class Calc():
 
         return result
 
+while 1:
+    try:
+        num1,num2 = map(int,input().split())
+        break
+    except ValueError:
+        print('숫자만 입력 가능합니다.') 
+
 
 calc = Calc()
 calc.set_number(20,10)
